@@ -1,0 +1,266 @@
+.cont1 {
+  position: relative;
+  height: auto;
+  padding: 10.3vh 12.2vw;
+  color: #fff;
+  z-index: 0;
+}
+
+.cont1::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 0.5px solid #ffffff28;
+  bottom: 0;
+  left: 0;
+}
+
+.cont1 h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.cont1 p {
+  height: 20vh;
+  padding: 3vh 0;
+  width: 31vw;
+  line-height: 28px;
+}
+
+.cont11 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+
+.cont1 .cont11 .left {
+  display: flex;
+  width: 62%;
+}
+
+.cont1 .cont11 .left button {
+  padding: 14px 23px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cont11 .left button:hover {
+  transform: translateY(-2.5px);
+  cursor: pointer;
+}
+
+.cont11 .left .start {
+  border: none;
+  background-color: #fff;
+  margin-right: 25px;
+}
+
+.cont11 .left .btn {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 40px;
+}
+
+.cont11 .left .btn .copy {
+  margin-left: 10px;
+}
+
+.cont11 .left .info {
+  display: flex;
+  line-height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 40px;
+  transition: all 0.2s ease;
+}
+
+.cont11 .left .info h4 {
+  font-weight: 400;
+}
+
+.cont11 .left .info:hover {
+  cursor: pointer;
+}
+
+.cont11 .left .info:hover h5 {
+  color: #fff;
+}
+
+.cont11 .left .info h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffffbe;
+}
+
+.cont11 .right {
+  position: relative;
+  width: 38%;
+}
+
+.cont11 .right .cont111 {
+  display: flex;
+  align-items: end;
+  padding: 5px;
+}
+
+.cont11 .right .cont111:hover {
+  cursor: pointer;
+}
+
+.cont11 .right .cont111:hover h5 {
+  color: #fff;
+}
+
+.cont11 .right h5 {
+  font-size: 14px;
+  color: #ffffffbe;
+  margin-right: 10px;
+}
+
+.cont11 .starOverlay .star1 {
+  position: absolute;
+  left: 23.8vw;
+  top: 0;
+  animation: star1 3.2s infinite;
+}
+
+.cont11 .starOverlay .star2 {
+  position: absolute;
+  left: 25vw;
+  top: -1vh;
+  animation: star2 2s infinite;
+}
+.cont11 .starOverlay .star3 {
+  position: absolute;
+  right: -2.5vw;
+  bottom: 0;
+  animation: star2 3s infinite;
+}
+.cont11 .starOverlay .star4 {
+  position: absolute;
+  left: 28vw;
+  top: -4vh;
+  animation: star1 3.8s infinite;
+}
+
+@keyframes star1 {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 14px;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes star2 {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 8px;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.cont12 {
+  height: 795px;
+  width: 1141px;
+  background-image: url("/src/assets/img/animation1/storybook-frame.svg");
+  background-size: 1141px 795px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10vh;
+}
+
+.cont12 .sidebar {
+  background-image: url("/src/assets/img/animation1/sidebar-tf-no-selection.svg");
+  background-repeat: no-repeat;
+  background-size: 236px 790px;
+  width: 236px;
+  height: 790px;
+  z-index: 3;
+}
+
+.cont13 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2vw;
+}
+
+.cont13 img {
+  height: 23px;
+  filter: brightness(80%);
+}
+
+.cont13 .logo11 {
+  height: 35px;
+}
+
+.grainy {
+  display: none;
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  /* filter: invert(1); */
+  filter: brightness(30%);
+  opacity: 5%;
+  z-index: -1;
+}
+
+.gooey1 {
+  position: absolute;
+  height: 170vh;
+  width: 150vh;
+  top: 6%;
+  left: 40%;
+  /* background-color: blue; */
+  background: rgb(64, 83, 134);
+  background: linear-gradient(
+    90deg,
+    rgb(59, 79, 135) 0%,
+    rgb(36, 83, 159) 100%
+  );
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.gooey {
+  position: absolute;
+  top: -42%;
+  left: 5%;
+  height: 120vh;
+  width: 175vh;
+  /* background-color: blue; */
+  background: rgb(161, 58, 108);
+  background: linear-gradient(100deg, rgba(161, 58, 108, 1) 0%, #da403b 120%);
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+}
